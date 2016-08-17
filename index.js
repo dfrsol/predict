@@ -1,3 +1,3 @@
 'use strict';
 
-require('lib/start.js');
+require('./lib/start.js');
