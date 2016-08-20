@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "lab -a code -t 100 -L -v",
+    "test-cov-html": "lab -a code -L -r html -o coverage.html",
     "start": "node index.js"
   },
   "author": "",
