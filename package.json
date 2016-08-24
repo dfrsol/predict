@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "lab -a code -t 100 -L -v",
+    "db:start": "docker run -d -p 28015:28015 -p 8090:8080 -v $PWD/db:/data --name expertsdb rethinkdb",
+    "db:stop": "docker stop expertsdb",
+    "db:remove": "docker rm expertsdb",
     "test-cov-html": "lab -a code -L -r html -o coverage.html",
     "start": "node index.js"
   },
